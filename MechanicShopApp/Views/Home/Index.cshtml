@@ -1,0 +1,228 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!-- banner section -->
+<section id="home" class="w3l-banner py-5">
+    <div class="container py-lg-5 py-md-4">
+        <div class="row align-items-center py-lg-4 py-md-3">
+            <div class="col-lg-6 col-sm-12">
+                <h3 class="mb-md-4 mb-3">Professional Car Repair and Maintenance.</h3>
+                <p>
+                    Mechanic Workshop is readily available to render services.
+                    For more details about our services
+                    
+                </p>
+                <div class="mt-sm-5 mt-4">
+                    <a class="btn btn-primary btn-style" href="@Url.Action("About","Home")"> Click Here </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
+<!-- home page about section -->
+<section class="w3l-index3" id="about">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="~/assets/images/about.jpg" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self">
+                    <h3 class="title-big">We value our clients and offer a personal, professional service.</h3>
+                    <p class="mt-4">
+                        Mechanic Workshop fixes vehicles and replaces their parts for customers. 
+                        Their duties include repairing the vehicle's mechanical components, 
+                        diagnosing problems with cars and performing maintenance work on them as well.
+                    </p>
+                    <a href="@Url.Action("About","Home")" class="btn btn-style btn-primary mt-lg-5 mt-4">Read our story</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page about section -->
+<!-- /bottom-grids-->
+<section class="w3l-bottom-grids-6 py-5" id="services">
+    <div class="container py-lg-5 py-md-4">
+        <h6 class="title-small text-center">Our Services</h6>
+        <h3 class="title-big mb-md-5 mb-4 text-center">Great Car Service</h3>
+        <div class="grids-area-hny main-cont-wthree-fea row">
+            <div class="col-lg-4 col-md-6 grids-feature">
+                <div class="area-box">
+                    <span class="fa fa-car"></span>
+                    <h4><a href="@Url.Action("Services","Home")" class="title-head">General Auto Repair & Maintenance</a></h4>
+                    <p>This include repairing the vehicle's mechanical components, diagnosing problems with cars and performing maintenance work on them as well.</p>
+                    <a href="@Url.Action("Services","Home")" class="more">Read More <span class="fa fa-long-arrow-right"></span> </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
+                <div class="area-box">
+                    <span class="fa fa-plug"></span>
+                    <h4><a href="@Url.Action("Services","Home")" class="title-head">Brake Repair and Replacement</a></h4>
+                    <p>This include repairing the vehicle's mechanical components, diagnosing problems with cars and performing maintenance work on them as well.</p>
+                    <a href="@Url.Action("Services","Home")" class="more">Read More <span class="fa fa-long-arrow-right"></span> </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
+                <div class="area-box">
+                    <span class="fa fa-wrench"></span>
+                    <h4><a href="@Url.Action("Services","Home")" class="title-head">Computer Diagnostic Testing</a></h4>
+                    <p>This include repairing the vehicle's mechanical components, diagnosing problems with cars and performing maintenance work on them as well.</p>
+                    <a href="@Url.Action("Services","Home")" class="more">Read More <span class="fa fa-long-arrow-right"></span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //bottom-grids-->
+<!-- stats -->
+<section class="w3l-stats py-lg-5 py-4" id="stats">
+    <div class="gallery-inner container py-md-5 py-4">
+        <h6 class="title-small text-center">Our Statistics</h6>
+        <h3 class="title-big mb-md-5 mb-5 text-center">Learn about Our Success</h3>
+        <div class="row stats-con">
+            <div class="col-md-3 col-6 stats_info counter_grid">
+                <span class="fa fa-car"></span>
+                <p class="counter">890+</p>
+                <h4>Cars serviced</h4>
+            </div>
+            <div class="col-md-3 col-6 stats_info counter_grid1">
+                <span class="fa fa-cogs"></span>
+                <p class="counter">15+</p>
+                <h4>Service stations</h4>
+            </div>
+            <div class="col-md-3 col-6 stats_info counter_grid mt-md-0 mt-5">
+                <span class="fa fa-users"></span>
+                <p class="counter">1200</p>
+                <h4>Clients served</h4>
+            </div>
+            <div class="col-md-3 col-6 stats_info counter_grid2 mt-md-0 mt-5">
+                <span class="fa fa-wrench"></span>
+                <p class="counter">20+</p>
+                <h4>Daily services</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //stats -->
+<!-- /bottom-grids-->
+<section class="w3l-bottom-grids-6 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <h6 class="title-small text-center">Explore features</h6>
+        <h3 class="title-big mb-md-5 mb-4 text-center">Quality and perfomance</h3>
+        <div class="grids-area-hny main-cont-wthree-fea row pt-4">
+            <div class="col-lg-4 col-md-6 grids-feature">
+                <div class="area-box-feature">
+                    <span class="fa fa-car"></span>
+                    <div class="info">
+                        <h4><a href="@Url.Action("Services","Home")" class="title-head mt-0">Brake fluid exchange</a></h4>
+                        <p>
+                            Brakes are one of the most critical aspects of any automobile. 
+                            This include repairing and servicing every part of the brake system.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-5">
+                <div class="area-box-feature">
+                    <span class="fa fa-plug"></span>
+                    <div class="info">
+                        <h4><a href="@Url.Action("Services","Home")" class="title-head mt-0">Wheel alignment</a></h4>
+                        <p>
+                            A reliable general auto service provider will evaluate, rotate, and perform the 
+                            balancing of tires as per the maintenance schedule
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-5">
+                <div class="area-box-feature">
+                    <span class="fa fa-wrench"></span>
+                    <div class="info">
+                        <h4><a href="@Url.Action("Services","Home")" class="title-head mt-0">Maintenance packages</a></h4>
+                        <p>
+                            Car diagnostic tests scan your car's components and systems to check for issues with components 
+                            like the engine, transmission, oil tank, throttle, and many more
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //bottom-grids-->
+<section class="w3l-aboutblock py-5" id="about">
+    <div class="midd-w3">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6 left-wthree-img text-righ">
+                    <div class="position-relative">
+                        <img src="~/assets/images/blog1.jpg" alt="" class="img-fluid">
+                        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
+                            <span class="video-play-icon">
+                                <span class="fa fa-play"></span>
+                            </span>
+                        </a>
+                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                            <iframe src="https://st3.depositphotos.com/5848114/13433/v/600/depositphotos_134336952-stock-video-mechanics-with-laptop-in-auto.mp4" allow="autoplay; fullscreen"
+                                    allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-sm-5 mt-4 about-right-faq align-self">
+                    <span class="title-small mb-md-2">Why choose us</span>
+                    <h3 class="title-big">We are Qualified & Professional</h3>
+                    
+                    <ol class="w3l-right mt-4">
+                        <li>We are endorsed by the local trading standards office</li>
+                        <li>All our work has a minimum 12-month guarantee all services</li>
+                        <li>We are endorsed by the local trading standards office</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- middle -->
+<div class="middle py-5">
+    <div class="container py-3">
+        <div class="welcome-left text-center">
+            <h6 class="title-small text-center mb-3">Great car service</h6>
+            <h3>Premium car service matched with great workmanship. Best services you can count on</h3>
+            
+            <a href="@Url.Action("Create","BookAppointments")" class="btn btn-style btn-primary mt-5">Contact Us</a>
+        </div>
+    </div>
+</div>
+<!-- //middle -->
+<!-- call us -->
+<section class="w3l-call pt-5" id="book">
+    <div class="container pt-lg-5 pt-md-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="mb-2">Book a trusted mechanic</h4>
+                <p class="mb-2">Call Us Now</p>
+                <h2><span class="fa mr-1 fa-phone"></span> +(234) 803 598 5920</h2>
+                <p class="mt-4">
+                    Mechanic Workshop is readily available to render services.
+                </p>
+                
+                <a href="@Url.Action("Create","BookAppointments")" class="btn btn-outline-primary btn-style ml-2 mt-md-5 mt-4">Contact Us</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-8 mt-md-0 mt-5">
+                <img src="~/assets/images/customer.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //call us -->
+<!-- forms -->

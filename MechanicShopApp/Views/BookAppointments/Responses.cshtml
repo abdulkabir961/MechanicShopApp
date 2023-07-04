@@ -1,0 +1,43 @@
+﻿@model MechanicShopApp.Models.BookAppointment
+
+@{
+    ViewBag.Title = "Responses";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<section class="w3l-about-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-5 py-md-3">
+            <h2 class="title">Book Appointment</h2>
+        </div>
+    </div>
+</section>
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="#url">Home</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Book Appointment</li>
+        </ul>
+    </div>
+</section>
+
+<section class="w3l-bottom-grids-6 py-5">
+    <div class="container py-lg-5 py-md-4">
+
+        <center>
+            
+                <h3><strong>Thank You For Booking with Us</strong></h3>
+            <br/>
+                <h3>A schedule for your Booking will be Sent to Your Mail</h3>
+           
+        </center>
+        
+        <br/>
+
+        <div>
+            @Html.ActionLink("Back to Booking", "Create")
+        </div>
+
+    </div>
+</section>
+

@@ -1,0 +1,74 @@
+﻿@model MechanicShopApp.Models.BookAppointment
+    @{
+        ViewBag.Title = "Details";
+        Layout = "~/Views/_AdminLayoutPage.cshtml";
+    }
+
+    <section class="w3l-about-breadcrumb">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+            <div class="container py-lg-5 py-md-3">
+                <h2 class="title">Details</h2>
+            </div>
+        </div>
+    </section>
+    <section class="w3l-breadcrumb">
+        <div class="container">
+            <ul class="breadcrumbs-custom-path">
+                <li><a href="#url">Admin</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Booked Details</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="w3l-bottom-grids-6 py-5">
+        <div class="container py-lg-5 py-md-4">
+
+            <div>
+                <dl>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Service.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Service.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.PhoneNo)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.PhoneNo)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Message)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Message)
+                    </dd>
+                </dl>
+            </div>
+            <p>
+                
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+    </section>
